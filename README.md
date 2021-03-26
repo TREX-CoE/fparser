@@ -98,7 +98,8 @@
 
     ` optimize_wavefunction 	true`
 
-8. Single and Double precision numbers along with numbers in scientific format can be read using the `fdf_get()` function.
+8. Single and Double precision numbers along with numbers in scientific format can be read using the `fdf_get()` function. 
+The second number in the bracket denotes the default value.
 
     `energy_tol = fdf_get('energy_tol', 0.00001d0)`
 
