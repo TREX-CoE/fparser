@@ -23,7 +23,9 @@
 
   In the parser folder, link the modified libfdf library with the interface Fortran file.
 
-  `ifort -c interface.F90 m_keywords.F90 m_periodic_table.F90 /usr/local/lib/libfdf.a`
+  `ifort -c m_periodic_table.F90 m_keywords.F90`
+
+  `ifort interface.F90 m_keywords.F90 m_periodic_table.F90 /usr/local/lib/libfdf.a`
 
 
 ## Integrate parser in your code
