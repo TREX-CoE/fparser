@@ -35,8 +35,10 @@ Methane
     sr_eps 		    0.001d0
     energy_tol 	    1.0E-5
 
-    ncore       0     no_active   0
-    nextorb   	280 ; nblk_max 	  200
+    ncore       0     
+    no_active   0
+    nextorb   	280 ; 
+    nblk_max 	  200
 
     opt_method      sr_n 
     multiple_adiag  no
@@ -48,3 +50,5 @@ Methane
 # Units can be specified after a number    
     etrial  = -15 Ha
 %endmodule 
+
+# This is a comment
