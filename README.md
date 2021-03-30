@@ -39,11 +39,15 @@
 
 - The order of keyword-value pairs does not matter
 
-- Multiple keyword-value pairs can be put in a single line
+- Spaces and tabs are ignored; keyword-value pairs are parsed in a free-form. 
 
 - Keywords are case insensitive.
 
 - A default value can be set for keywords not present in the input file. 
+
+- Large data can be parsed using the %block structure.
+
+- Multiple keyword-value pairs can be clubbed together in a %module structure.
 
 
 ## Syntax
@@ -87,7 +91,7 @@
 
 6. Group certain keywords using the %module construct
 
-    ```perl
+    ```Fortran
     %module DMC
       tau     =   0.04
       etrial  = -15 Ha
