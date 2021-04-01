@@ -1,5 +1,12 @@
 # A Modern Fortran-based Parser
 
+| **Status** | ![Github issues](https://img.shields.io/github/issues/TREX-CoE/fparser) ![Github forks](https://img.shields.io/github/forks/TREX-CoE/fparser) ![Github stars](https://img.shields.io/github/stars/TREX-CoE/fparser) |
+| :------ | :------- |
+| **License** | ![Github license](https://img.shields.io/github/license/TREX-CoE/fparser)|
+
+
+
+
   This repository contains a modern Fortran-based input file parser. It uses a modified libfdf library.
 
 ---
