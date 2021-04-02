@@ -1,13 +1,18 @@
 # A Modern Fortran-based Parser
 
-| **Status** | ![Issues](https://img.shields.io/github/issues/TREX-CoE/fparser) ![Pull Requests](https://img.shields.io/github/issues-pr/TREX-CoE/fparser) ![Last Commit](https://img.shields.io/github/last-commit/TREX-CoE/fparser) ![commit-status](https://img.shields.io/github/commit-status/TREX-CoE/fparser/minimal/17440cdde4fea69ee3136256e82fabf94304c967) ![Commit Activity](https://img.shields.io/github/commit-activity/w/TREX-CoE/fparser) |  
+| **Status** | ![Github workflow](https://img.shields.io/github/workflow/status/TREX-CoE/fparser/CI) ![Github Issues](https://img.shields.io/github/issues/TREX-CoE/fparser) ![Github Pull Requests](https://img.shields.io/github/issues-pr/TREX-CoE/fparser) ![Github Last Commit](https://img.shields.io/github/last-commit/TREX-CoE/fparser) ![Github Commit Status](https://img.shields.io/github/commit-status/TREX-CoE/fparser/minimal/17440cdde4fea69ee3136256e82fabf94304c967) ![Github Commit Activity](https://img.shields.io/github/commit-activity/w/TREX-CoE/fparser) |  
 | :------ | :------- |
-| **Info**   | ![Last release tag](https://img.shields.io/github/v/tag/TREX-CoE/fparser) ![Github forks](https://img.shields.io/github/forks/TREX-CoE/fparser) ![Github stars](https://img.shields.io/github/stars/TREX-CoE/fparser) ![languages](https://img.shields.io/github/languages/count/TREX-CoE/fparser) ![Main Language](https://img.shields.io/github/languages/top/TREX-CoE/fparser) ![Contributors](https://img.shields.io/github/contributors/TREX-CoE/fparser) ![Repo Size](https://img.shields.io/github/repo-size/TREX-CoE/fparser) ![Code Size](https://img.shields.io/github/languages/code-size/TREX-CoE/fparser)|
+| **Info**   | ![Last release tag](https://img.shields.io/github/v/tag/TREX-CoE/fparser) ![Github forks](https://img.shields.io/github/forks/TREX-CoE/fparser) ![Github stars](https://img.shields.io/github/stars/TREX-CoE/fparser)  ![Main Language](https://img.shields.io/github/languages/top/TREX-CoE/fparser)  ![Repo Size](https://img.shields.io/github/repo-size/TREX-CoE/fparser) ![Code Size](https://img.shields.io/github/languages/code-size/TREX-CoE/fparser)|
 | **License** | ![Github license](https://img.shields.io/github/license/TREX-CoE/fparser)|
 
 
-<!--
-- Issues         ![Github issues](https://img.shields.io/github/issues/TREX-CoE/fparser) 
+
+ <!--
+-- Build  ![Github workflow](https://img.shields.io/github/workflow/status/TREX-CoE/fparser/CI) 
+ - top language ![languages](https://img.shields.io/github/languages/count/TREX-CoE/fparser)
+ - contributors ![Contributors](https://img.shields.io/github/contributors/TREX-CoE/fparser)
+-  Issues         ![Github issues](https://img.shields.io/github/issues/TREX-CoE/fparser) 
+- /github/workflow/status/:user/:repo/:workflow
 - Pull Requests  ![Github Pull Requests](https://img.shields.io/github/issues-pr/TREX-CoE/fparser) 
 - Forks          ![Github forks](https://img.shields.io/github/forks/TREX-CoE/fparser) 
 - Stars          ![Github stars](https://img.shields.io/github/stars/TREX-CoE/fparser) 
