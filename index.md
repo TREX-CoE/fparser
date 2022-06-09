@@ -5,29 +5,7 @@
 | **Info**   | ![Last release tag](https://img.shields.io/github/v/tag/TREX-CoE/fparser) ![Github forks](https://img.shields.io/github/forks/TREX-CoE/fparser) ![Github stars](https://img.shields.io/github/stars/TREX-CoE/fparser)  ![Main Language](https://img.shields.io/github/languages/top/TREX-CoE/fparser)  ![Repo Size](https://img.shields.io/github/repo-size/TREX-CoE/fparser) ![Code Size](https://img.shields.io/github/languages/code-size/TREX-CoE/fparser)|
 | **License** | ![Github license](https://img.shields.io/github/license/TREX-CoE/fparser)|
 
-
-
- <!--
--- Build  ![Github workflow](https://img.shields.io/github/workflow/status/TREX-CoE/fparser/CI) 
- - top language ![languages](https://img.shields.io/github/languages/count/TREX-CoE/fparser)
- - contributors ![Contributors](https://img.shields.io/github/contributors/TREX-CoE/fparser)
--  Issues         ![Github issues](https://img.shields.io/github/issues/TREX-CoE/fparser) 
-- /github/workflow/status/:user/:repo/:workflow
-- Pull Requests  ![Github Pull Requests](https://img.shields.io/github/issues-pr/TREX-CoE/fparser) 
-- Forks          ![Github forks](https://img.shields.io/github/forks/TREX-CoE/fparser) 
-- Stars          ![Github stars](https://img.shields.io/github/stars/TREX-CoE/fparser) 
-- tag            ![Last release tag](https://img.shields.io/github/v/tag/TREX-CoE/fparser)
-- Repo size      ![Repo Size](https://img.shields.io/github/repo-size/TREX-CoE/fparser)
-- Code size      ![Code Size](https://img.shields.io/github/languages/code-size/TREX-CoE/fparser)
-- Commit Status  ![commit-status](https://img.shields.io/github/commit-status/TREX-CoE/fparser/minimal/17440cdde4fea69ee3136256e82fabf94304c967)
-- Last Commit    ![Last Commit](https://img.shields.io/github/last-commit/TREX-CoE/fparser)
-- Commit Activity ![Commit Activity](https://img.shields.io/github/commit-activity/w/TREX-CoE/fparser)
-- Main Language  ![Main Language](https://img.shields.io/github/languages/top/TREX-CoE/fparser)
-- Downloads      ![Downloads](https://img.shields.io/github/downloads/TREX-CoE/fparser/total)
-- Contributors   ![Contributors](https://img.shields.io/github/contributors/TREX-CoE/fparser)
-- Deployment     ![Deployment](https://img.shields.io/github/deployments/TREX-CoE/fparser/stage)
-- Code Quality   ![Code Quality](https://img.shields.io/scrutinizer/quality/github/TREX-CoE/fparser)
--->
+ 
 
   This repository contains a modern Fortran-based input file parser. It uses a modified libfdf library.
 
@@ -83,15 +61,15 @@
 
 1. Include another input file for parser to read using:
 
-    ` %include    global.inp`
+`%include    global.inp`
 
 2. Include a data file for parser to read using:
 
-    ` load label filename`
+ `load label filename`
 
 3. Here, depending upon the label, parser will provide the filename. For example,
 
-    ` load basis cc-pvtz.gbs`
+ `load basis cc-pvtz.gbs`
 
 4. Read molecular coordinates directly from the input file using 
 
@@ -116,7 +94,7 @@
 
 5. Read molecular coordinates from an external .xyz file using 
 
-    ` %block molecule < benzene.xyz `
+    `%block molecule < benzene.xyz`
 
 6. Group certain keywords using the %module construct
 
@@ -129,7 +107,7 @@
 
 7. Logical variables accept `true`, `TRUE`, `T`, `.true.` as valid keywords for `True`. The `fdf_boolean` function can also  take "1" as true and "0" as false from the input.
 
-    ` optimize_wavefunction 	true`
+    `optimize_wavefunction 	true`
 
 8. Single and Double precision numbers along with numbers in scientific format can be read using the `fdf_get()` function. 
 The second number in the bracket denotes the default value.
@@ -138,19 +116,19 @@ The second number in the bracket denotes the default value.
 
 9. Floats/integers/strings/booleans can be parsed generically using the interface `fdf_get()` function. Strings are limited to 132 characters per line.
 
-    `  sr_tau         = fdf_get('sr_tau', 0.025d0)`
+    `sr_tau         = fdf_get('sr_tau', 0.025d0)`
 
-    `  nspin1         = fdf_get('nspin1', 1)`
+    `nspin1         = fdf_get('nspin1', 1)`
 
-    `  opt_method     = fdf_get('opt_method', "sr_n")`
+    `opt_method     = fdf_get('opt_method', "sr_n")`
 
-    `  multiple_adiag = fdf_get('multiple_adiag', .false.)`
+    `multiple_adiag = fdf_get('multiple_adiag', .false.)`
 
 10. Units can be specified to variables. Unit conversion is possible at the parsing.
 
     If the input file has `etrial  = -15 Ha` entry, the `etrial` variable can be assigned values using the `fdf_physical` function with unit conversion.
 
-    `  etrial = fdf_physical('etrial', -20.d0, 'eV')`
+    `etrial = fdf_physical('etrial', -20.d0, 'eV')`
 
 11. List of public functions available for parsing the data:
 
